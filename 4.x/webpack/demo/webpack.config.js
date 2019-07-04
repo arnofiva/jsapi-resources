@@ -66,7 +66,11 @@ module.exports = {
 
     new ArcGISPlugin({
       features: {
-        "3d": false
+        "3d": false,
+        has: {
+          // enable native promise in ArcGIS API for JavaScript
+          'esri-native-promise': true,
+        }
       }
     }),
 
